@@ -5,12 +5,13 @@ nav{
     width: 100vw;
     position: absolute;
     top: 0;
+    border-bottom: 2px solid;
 }
 
 #nav-list{
     float:left;
     margin-left: 40px;
-    /* display: none; */
+    display: none;
 }
 
 #nav-lis li{
@@ -31,10 +32,14 @@ nav{
     display: none;
 }
 
-/* #check:checked~#nav-list {
-    right: 0;
+.container input:checked~.checkmark:after {
     display: block;
-} */
+}
+
+#check:checked ~ nav ul {
+    /* right: 0; */
+    display: block;
+}
 
  
 .burger-button {

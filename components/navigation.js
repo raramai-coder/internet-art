@@ -15,18 +15,17 @@ icon.innerText="menu";
 checklabel.appendChild(icon);
 
 
-//Create Navigation List
-    const navContainer = document.createElement('ul');
-    navContainer.setAttribute('id', 'nav-list');
+const navContainer = document.createElement('ul');
+navContainer.setAttribute('id', 'nav-list');
 
-    //Attach navigation links
-    const pages = [
+//Attach navigation links
+const pages = [
 	{ url: "./index.html", name: "Home", id: "home" },
 	{ url: "./Blogs/Blogs.html", name: "Blogs", id: "blog" },
 	{ url: "./Design/Design.html", name: "Design", id: "design" },
-    ];
+];
 
-    pages.forEach(element=>{
+pages.forEach(element=>{
         const listItem = document.createElement("li");
         const link = document.createElement("a");
 
@@ -41,11 +40,11 @@ checklabel.appendChild(icon);
         listItem.append(link);
 
         navContainer.append(listItem);
-    });
+});
 
 navDrawer.append(checkbox);
 navDrawer.append(checklabel);
-    navDrawer.append(navContainer);
+navDrawer.append(navContainer);
 
 class NavDrawer extends HTMLElement{
     constructor() {
