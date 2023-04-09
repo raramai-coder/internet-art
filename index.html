@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
-    <title>Internet Art</title>
-</head>
-<body>
-   <head>
-        <nav-bar></nav-bar>
-   </head>
-   <script src="/components/navigation.js"></script> 
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="style.css" />
+		<title>Internet Art</title>
+	</head>
+	<body>
+		<head>
+			<nav-bar></nav-bar>
+		</head>
+
+		<main>
+			<collage-view
+				data-prompt="Dogs"
+				data-creator="User"
+				data-stars="4"
+				data-keywordset="lovely;strong;pretty"
+			></collage-view>
+			<collage-view
+				data-prompt="Cats"
+				data-creator="User"
+				data-stars="3"
+				data-keywordset="lovely;cat;pretty"
+			></collage-view>
+			<collage-view
+				data-prompt="Escape"
+				data-creator="Users"
+				data-stars="2"
+				data-keywordset="Cocktail;strong;dreamy"
+			></collage-view>
+			<collage-view
+				data-prompt="Chocolate"
+				data-creator="User User"
+				data-stars="5"
+				data-keywordset="lovely;foodie;pretty"
+			></collage-view>
+			<collage-view
+				data-prompt="Losanges"
+				data-creator="User Flu"
+				data-stars="1"
+				data-keywordset="nah;stronger;petty"
+			></collage-view>
+		</main>
+		<script src="/components/navigation.js"></script>
+		<script src="/components/collage-view.js"></script>
+	</body>
 </html>

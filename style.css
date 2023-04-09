@@ -1,59 +1,135 @@
-
-
-nav{
-    float: left;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    border-bottom: 2px solid;
+:root {
+	--primary: #f0c5b4;
+	--black: #010101;
+	--buttonPrimary: #ecd3c9;
+	--buttonBorder: #e57dca;
 }
 
-#nav-list{
-    float:left;
-    margin-left: 40px;
-    display: none;
+body {
+	color: var(--black);
 }
 
-#nav-lis li{
-    margin-right: 40px;
-    margin-top: 10px;
-    display: block;
-    padding: 30px 0;
+nav {
+	float: left;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	border-bottom: 2px solid;
+	padding-block: 15px;
+	z-index: 50;
+}
+
+#nav-list {
+	float: left;
+	display: none;
+	list-style: none;
+	background-color: var(--primary);
+	padding-right: 30px;
+	padding-block: 40px;
+	border-radius: 5px;
+}
+
+#nav-lis li {
+	margin-right: 40px;
+	margin-top: 30px;
+	display: block;
+	padding: 30px 0;
 }
 
 #nav-list li a {
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
 }
 
 #check {
-    display: none;
+	display: none;
 }
 
-.container input:checked~.checkmark:after {
-    display: block;
+#check:checked ~ ul {
+	/* right: 0; */
+	display: block;
 }
 
-#check:checked ~ nav ul {
-    /* right: 0; */
-    display: block;
-}
-
- 
 .burger-button {
-    font-size: 3px;
-    float: left;
-    margin-left: 40px;
-    line-height: 100px;
-    cursor: pointer;
+	font-size: 3px;
+	float: left;
+	margin-left: 35px;
+	line-height: 0px;
+	cursor: pointer;
 }
 
 .material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 4000,
-        'GRAD' 0,
-        'opsz' 48
+	font-variation-settings: "FILL" 0, "wght" 4000, "GRAD" 0, "opsz" 48;
+	color: var(--black);
+}
+
+.container {
+	display: flex;
+	width: 90%;
+	height: fit-content;
+	margin: auto;
+	top: 20px;
+	position: relative;
+	padding: 5%;
+}
+
+.collage {
+	display: block;
+	width: 40%;
+	height: 550px;
+	background-color: var(--primary);
+	margin: auto;
+	position: relative;
+	border-radius: 100%;
+}
+
+.details-container {
+	display: block;
+	width: 40%;
+	height: 600px;
+	margin: auto;
+	position: relative;
+	padding-top: 85px;
+}
+
+.keyword-set-container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 25px;
+	width: 60%;
+}
+
+.keyword-button {
+	background-color: var(--buttonPrimary);
+	border-style: solid;
+	border-radius: 5px;
+	border-color: var(--buttonPrimary);
+	border-width: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 25px;
+}
+
+.collage-header {
+	font-size: 70px;
+	margin-bottom: 25px;
+}
+
+.star-container {
+	display: flex;
+	margin-bottom: 25px;
+	justify-content: space-between;
+	width: 40%;
+}
+
+.keyword-input {
+	height: 40px;
+	border-radius: 10px;
+	border-color: var(--buttonPrimary);
+	border-width: 1.5px;
+	border-bottom-color: var(--buttonPrimary);
+	border-bottom-width: 3px;
+	padding-left: 10px;
 }
