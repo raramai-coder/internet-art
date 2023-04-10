@@ -3,6 +3,7 @@
 	--black: #010101;
 	--buttonPrimary: #ecd3c9;
 	--buttonBorder: #e57dca;
+	--white: #fff;
 }
 
 body {
@@ -17,6 +18,7 @@ nav {
 	border-bottom: 2px solid;
 	padding-block: 15px;
 	z-index: 50;
+	background-color: var(--white);
 }
 
 #nav-list {
