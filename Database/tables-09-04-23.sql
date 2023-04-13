@@ -50,19 +50,19 @@ GO
 --     keywordText [NVARCHAR](50) NOT NULL,
 -- );
 
-CREATE TABLE dbo.search
-(
-    searchId INT NOT NULL PRIMARY KEY, -- primary key column
-    collage int NOT NULL,
-    CONSTRAINT FK_collageSearch FOREIGN KEY (collage) 
-        REFERENCES dbo.collages (collagesId)
-        ON DELETE CASCADE
-        ON UPDATE CASCADE,
-    searchTerm [NVARCHAR](50) NOT NULL,
-);
+-- CREATE TABLE dbo.search
+-- (
+--     searchId INT NOT NULL PRIMARY KEY, -- primary key column
+--     collage int NOT NULL,
+--     CONSTRAINT FK_collageSearch FOREIGN KEY (collage) 
+--         REFERENCES dbo.collages (collagesId)
+--         ON DELETE CASCADE
+--         ON UPDATE CASCADE,
+--     searchTerm [NVARCHAR](50) NOT NULL,
+-- );
 
 
-GO
+-- GO
 
 -- id, promptkey, creator, stars, keyword keys,imagekey
 --keyword, votes, keyinmain table

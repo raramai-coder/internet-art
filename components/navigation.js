@@ -23,6 +23,9 @@ const pages = [
 	{ url: "./index.html", name: "Home", id: "home" },
 	{ url: "./Blogs/Blogs.html", name: "Blogs", id: "blog" },
 	{ url: "./Design/Design.html", name: "Design", id: "design" },
+	{ url: "./About.html", name: "About", id: "about" },
+	{ url: "./Howitworks.html", name: "How it works", id: "howitworks" },
+	{ url: "./Create.html", name: "Create a Collage", id: "create" },
 ];
 
 pages.forEach((element) => {

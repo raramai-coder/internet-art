@@ -4,6 +4,7 @@
 	--buttonPrimary: #ecd3c9;
 	--buttonBorder: #e57dca;
 	--white: #fff;
+	--createBackground: #f7eded;
 }
 
 body {
@@ -29,6 +30,7 @@ nav {
 	padding-right: 30px;
 	padding-block: 40px;
 	border-radius: 5px;
+	/* text-align: center; */
 }
 
 #nav-lis li {
@@ -43,6 +45,17 @@ nav {
 	font-size: 30px;
 	font-weight: bold;
 	cursor: pointer;
+	margin-top: 30px;
+}
+
+#create {
+	/* background-color: var(--white); */
+	border-radius: 5px;
+	border-color: var(--buttonBorder);
+	border-width: 2px;
+	border-style: solid;
+	padding-inline: 10px;
+	padding-block: 5px;
 }
 
 #check {
@@ -134,4 +147,34 @@ nav {
 	border-bottom-color: var(--buttonPrimary);
 	border-bottom-width: 3px;
 	padding-left: 10px;
+}
+
+#create-main {
+	background-color: var(--createBackground);
+}
+
+.image-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.search-input {
+	height: 40px;
+	border-radius: 10px;
+	border-color: var(--buttonPrimary);
+	border-width: 1.5px;
+	padding-left: 10px;
+	margin-top: 20px;
+}
+
+.submit-button {
+	height: 40px;
+	width: 170px;
+	border-radius: 10px;
+	border-color: var(--buttonPrimary);
+	border-width: 1.5px;
+	padding-left: 10px;
+	margin-top: 20px;
+	background-color: var(--buttonPrimary);
 }
